@@ -1,0 +1,544 @@
+PS C:\Users\root\source\repos\cand-c2-project\Exercise_1> terraform destroy
+aws_instance.udacity-t2[3]: Refreshing state... [id=i-000a58d4ec181e4ef]
+aws_instance.udacity-t2[2]: Refreshing state... [id=i-04b97bb3a7f1db80c]
+aws_instance.udacity-t2[1]: Refreshing state... [id=i-0450e3bb4f97d135c]
+aws_instance.udacity-t2[0]: Refreshing state... [id=i-0b258cdf2e33470a6]
+
+Note: Objects have changed outside of Terraform
+
+Terraform detected the following changes made outside of Terraform since the last "terraform apply":
+
+  # aws_instance.udacity-t2[0] has been changed
+  ~ resource "aws_instance" "udacity-t2" {
+      + arn                                  = "arn:aws:ec2:us-east-1:162925386544:instance/i-0b258cdf2e33470a6"
+      + associate_public_ip_address          = false
+      + availability_zone                    = "us-east-1a"
+      + cpu_core_count                       = 1
+      + cpu_threads_per_core                 = 1
+      + disable_api_termination              = false
+      + ebs_optimized                        = false
+      + hibernation                          = false
+        id                                   = "i-0b258cdf2e33470a6"
+      + instance_initiated_shutdown_behavior = "stop"
+      + instance_state                       = "stopped"
+      + ipv6_address_count                   = 0
+      + ipv6_addresses                       = []
+      + monitoring                           = false
+      + primary_network_interface_id         = "eni-021ecf1ac7b0a0455"
+      + private_dns                          = "ip-10-1-10-65.ec2.internal"
+      + private_ip                           = "10.1.10.65"
+        tags                                 = {
+            "Name" = "Udacity T2"
+        }
+      + tenancy                              = "default"
+      ~ vpc_security_group_ids               = [
+          + "sg-0735643761f2bfff7",
+        ]
+        # (8 unchanged attributes hidden)
+
+      + capacity_reservation_specification {
+          + capacity_reservation_preference = "open"
+        }
+
+      + credit_specification {
+          + cpu_credits = "standard"
+        }
+
+      + enclave_options {
+          + enabled = false
+        }
+
+      + metadata_options {
+          + http_endpoint               = "enabled"
+          + http_put_response_hop_limit = 1
+          + http_tokens                 = "optional"
+        }
+
+      + root_block_device {
+          + delete_on_termination = true
+          + device_name           = "/dev/xvda"
+          + encrypted             = false
+          + iops                  = 100
+          + tags                  = {}
+          + throughput            = 0
+          + volume_id             = "vol-07080e2b49c530754"
+          + volume_size           = 8
+          + volume_type           = "gp2"
+        }
+    }
+  # aws_instance.udacity-t2[1] has been changed
+  ~ resource "aws_instance" "udacity-t2" {
+      + arn                                  = "arn:aws:ec2:us-east-1:162925386544:instance/i-0450e3bb4f97d135c"
+      + associate_public_ip_address          = false
+      + availability_zone                    = "us-east-1a"
+      + cpu_core_count                       = 1
+      + cpu_threads_per_core                 = 1
+      + disable_api_termination              = false
+      + ebs_optimized                        = false
+      + hibernation                          = false
+        id                                   = "i-0450e3bb4f97d135c"
+      + instance_initiated_shutdown_behavior = "stop"
+      + instance_state                       = "stopped"
+      + ipv6_address_count                   = 0
+      + ipv6_addresses                       = []
+      + monitoring                           = false
+      + primary_network_interface_id         = "eni-0f3b5573278bb1c1f"
+      + private_dns                          = "ip-10-1-10-51.ec2.internal"
+      + private_ip                           = "10.1.10.51"
+        tags                                 = {
+            "Name" = "Udacity T2"
+        }
+      + tenancy                              = "default"
+      ~ vpc_security_group_ids               = [
+          + "sg-0735643761f2bfff7",
+        ]
+        # (8 unchanged attributes hidden)
+
+      + capacity_reservation_specification {
+          + capacity_reservation_preference = "open"
+        }
+
+      + credit_specification {
+          + cpu_credits = "standard"
+        }
+
+      + enclave_options {
+          + enabled = false
+        }
+
+      + metadata_options {
+          + http_endpoint               = "enabled"
+          + http_put_response_hop_limit = 1
+          + http_tokens                 = "optional"
+        }
+
+      + root_block_device {
+          + delete_on_termination = true
+          + device_name           = "/dev/xvda"
+          + encrypted             = false
+          + iops                  = 100
+          + tags                  = {}
+          + throughput            = 0
+          + volume_id             = "vol-08e07e4b55483af7b"
+          + volume_size           = 8
+          + volume_type           = "gp2"
+        }
+    }
+  # aws_instance.udacity-t2[2] has been changed
+  ~ resource "aws_instance" "udacity-t2" {
+      + arn                                  = "arn:aws:ec2:us-east-1:162925386544:instance/i-04b97bb3a7f1db80c"
+      + associate_public_ip_address          = false
+      + availability_zone                    = "us-east-1a"
+      + cpu_core_count                       = 1
+      + cpu_threads_per_core                 = 1
+      + disable_api_termination              = false
+      + ebs_optimized                        = false
+      + hibernation                          = false
+        id                                   = "i-04b97bb3a7f1db80c"
+      + instance_initiated_shutdown_behavior = "stop"
+      + instance_state                       = "stopped"
+      + ipv6_address_count                   = 0
+      + ipv6_addresses                       = []
+      + monitoring                           = false
+      + primary_network_interface_id         = "eni-0ee259e0661d36efd"
+      + private_dns                          = "ip-10-1-10-146.ec2.internal"
+      + private_ip                           = "10.1.10.146"
+        tags                                 = {
+            "Name" = "Udacity T2"
+        }
+      + tenancy                              = "default"
+      ~ vpc_security_group_ids               = [
+          + "sg-0735643761f2bfff7",
+        ]
+        # (8 unchanged attributes hidden)
+
+      + capacity_reservation_specification {
+          + capacity_reservation_preference = "open"
+        }
+
+      + credit_specification {
+          + cpu_credits = "standard"
+        }
+
+      + enclave_options {
+          + enabled = false
+        }
+
+      + metadata_options {
+          + http_endpoint               = "enabled"
+          + http_put_response_hop_limit = 1
+          + http_tokens                 = "optional"
+        }
+
+      + root_block_device {
+          + delete_on_termination = true
+          + device_name           = "/dev/xvda"
+          + encrypted             = false
+          + iops                  = 100
+          + tags                  = {}
+          + throughput            = 0
+          + volume_id             = "vol-02474259048070577"
+          + volume_size           = 8
+          + volume_type           = "gp2"
+        }
+    }
+  # aws_instance.udacity-t2[3] has been changed
+  ~ resource "aws_instance" "udacity-t2" {
+      + arn                                  = "arn:aws:ec2:us-east-1:162925386544:instance/i-000a58d4ec181e4ef"
+      + associate_public_ip_address          = false
+      + availability_zone                    = "us-east-1a"
+      + cpu_core_count                       = 1
+      + cpu_threads_per_core                 = 1
+      + disable_api_termination              = false
+      + ebs_optimized                        = false
+      + hibernation                          = false
+        id                                   = "i-000a58d4ec181e4ef"
+      + instance_initiated_shutdown_behavior = "stop"
+      + instance_state                       = "stopped"
+      + ipv6_address_count                   = 0
+      + ipv6_addresses                       = []
+      + monitoring                           = false
+      + primary_network_interface_id         = "eni-06232c9de5f709ffa"
+      + private_dns                          = "ip-10-1-10-81.ec2.internal"
+      + private_ip                           = "10.1.10.81"
+        tags                                 = {
+            "Name" = "Udacity T2"
+        }
+      + tenancy                              = "default"
+      ~ vpc_security_group_ids               = [
+          + "sg-0735643761f2bfff7",
+        ]
+        # (8 unchanged attributes hidden)
+
+      + capacity_reservation_specification {
+          + capacity_reservation_preference = "open"
+        }
+
+      + credit_specification {
+          + cpu_credits = "standard"
+        }
+
+      + enclave_options {
+          + enabled = false
+        }
+
+      + metadata_options {
+          + http_endpoint               = "enabled"
+          + http_put_response_hop_limit = 1
+          + http_tokens                 = "optional"
+        }
+
+      + root_block_device {
+          + delete_on_termination = true
+          + device_name           = "/dev/xvda"
+          + encrypted             = false
+          + iops                  = 100
+          + tags                  = {}
+          + throughput            = 0
+          + volume_id             = "vol-0296d10f3f82d923a"
+          + volume_size           = 8
+          + volume_type           = "gp2"
+        }
+    }
+
+Unless you have made equivalent changes to your configuration, or ignored the relevant attributes using ignore_changes,
+the following plan may include actions to undo or respond to these changes.
+
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the
+following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # aws_instance.udacity-t2[0] will be destroyed
+  - resource "aws_instance" "udacity-t2" {
+      - ami                                  = "ami-0323c3dd2da7fb37d" -> null
+      - arn                                  = "arn:aws:ec2:us-east-1:162925386544:instance/i-0b258cdf2e33470a6" -> null      - associate_public_ip_address          = false -> null
+      - availability_zone                    = "us-east-1a" -> null
+      - cpu_core_count                       = 1 -> null
+      - cpu_threads_per_core                 = 1 -> null
+      - disable_api_termination              = false -> null
+      - ebs_optimized                        = false -> null
+      - get_password_data                    = false -> null
+      - hibernation                          = false -> null
+      - id                                   = "i-0b258cdf2e33470a6" -> null
+      - instance_initiated_shutdown_behavior = "stop" -> null
+      - instance_state                       = "stopped" -> null
+      - instance_type                        = "t2.micro" -> null
+      - ipv6_address_count                   = 0 -> null
+      - ipv6_addresses                       = [] -> null
+      - monitoring                           = false -> null
+      - primary_network_interface_id         = "eni-021ecf1ac7b0a0455" -> null
+      - private_dns                          = "ip-10-1-10-65.ec2.internal" -> null
+      - private_ip                           = "10.1.10.65" -> null
+      - secondary_private_ips                = [] -> null
+      - security_groups                      = [] -> null
+      - source_dest_check                    = true -> null
+      - subnet_id                            = "subnet-038a6a6158e4259eb" -> null
+      - tags                                 = {
+          - "Name" = "Udacity T2"
+        } -> null
+      - tags_all                             = {
+          - "Name" = "Udacity T2"
+        } -> null
+      - tenancy                              = "default" -> null
+      - vpc_security_group_ids               = [
+          - "sg-0735643761f2bfff7",
+        ] -> null
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      - credit_specification {
+          - cpu_credits = "standard" -> null
+        }
+
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_put_response_hop_limit = 1 -> null
+          - http_tokens                 = "optional" -> null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -> null
+          - device_name           = "/dev/xvda" -> null
+          - encrypted             = false -> null
+          - iops                  = 100 -> null
+          - tags                  = {} -> null
+          - throughput            = 0 -> null
+          - volume_id             = "vol-07080e2b49c530754" -> null
+          - volume_size           = 8 -> null
+          - volume_type           = "gp2" -> null
+        }
+    }
+
+  # aws_instance.udacity-t2[1] will be destroyed
+  - resource "aws_instance" "udacity-t2" {
+      - ami                                  = "ami-0323c3dd2da7fb37d" -> null
+      - arn                                  = "arn:aws:ec2:us-east-1:162925386544:instance/i-0450e3bb4f97d135c" -> null      - associate_public_ip_address          = false -> null
+      - availability_zone                    = "us-east-1a" -> null
+      - cpu_core_count                       = 1 -> null
+      - cpu_threads_per_core                 = 1 -> null
+      - disable_api_termination              = false -> null
+      - ebs_optimized                        = false -> null
+      - get_password_data                    = false -> null
+      - hibernation                          = false -> null
+      - id                                   = "i-0450e3bb4f97d135c" -> null
+      - instance_initiated_shutdown_behavior = "stop" -> null
+      - instance_state                       = "stopped" -> null
+      - instance_type                        = "t2.micro" -> null
+      - ipv6_address_count                   = 0 -> null
+      - ipv6_addresses                       = [] -> null
+      - monitoring                           = false -> null
+      - primary_network_interface_id         = "eni-0f3b5573278bb1c1f" -> null
+      - private_dns                          = "ip-10-1-10-51.ec2.internal" -> null
+      - private_ip                           = "10.1.10.51" -> null
+      - secondary_private_ips                = [] -> null
+      - security_groups                      = [] -> null
+      - source_dest_check                    = true -> null
+      - subnet_id                            = "subnet-038a6a6158e4259eb" -> null
+      - tags                                 = {
+          - "Name" = "Udacity T2"
+        } -> null
+      - tags_all                             = {
+          - "Name" = "Udacity T2"
+        } -> null
+      - tenancy                              = "default" -> null
+      - vpc_security_group_ids               = [
+          - "sg-0735643761f2bfff7",
+        ] -> null
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      - credit_specification {
+          - cpu_credits = "standard" -> null
+        }
+
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_put_response_hop_limit = 1 -> null
+          - http_tokens                 = "optional" -> null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -> null
+          - device_name           = "/dev/xvda" -> null
+          - encrypted             = false -> null
+          - iops                  = 100 -> null
+          - tags                  = {} -> null
+          - throughput            = 0 -> null
+          - volume_id             = "vol-08e07e4b55483af7b" -> null
+          - volume_size           = 8 -> null
+          - volume_type           = "gp2" -> null
+        }
+    }
+
+  # aws_instance.udacity-t2[2] will be destroyed
+  - resource "aws_instance" "udacity-t2" {
+      - ami                                  = "ami-0323c3dd2da7fb37d" -> null
+      - arn                                  = "arn:aws:ec2:us-east-1:162925386544:instance/i-04b97bb3a7f1db80c" -> null      - associate_public_ip_address          = false -> null
+      - availability_zone                    = "us-east-1a" -> null
+      - cpu_core_count                       = 1 -> null
+      - cpu_threads_per_core                 = 1 -> null
+      - disable_api_termination              = false -> null
+      - ebs_optimized                        = false -> null
+      - get_password_data                    = false -> null
+      - hibernation                          = false -> null
+      - id                                   = "i-04b97bb3a7f1db80c" -> null
+      - instance_initiated_shutdown_behavior = "stop" -> null
+      - instance_state                       = "stopped" -> null
+      - instance_type                        = "t2.micro" -> null
+      - ipv6_address_count                   = 0 -> null
+      - ipv6_addresses                       = [] -> null
+      - monitoring                           = false -> null
+      - primary_network_interface_id         = "eni-0ee259e0661d36efd" -> null
+      - private_dns                          = "ip-10-1-10-146.ec2.internal" -> null
+      - private_ip                           = "10.1.10.146" -> null
+      - secondary_private_ips                = [] -> null
+      - security_groups                      = [] -> null
+      - source_dest_check                    = true -> null
+      - subnet_id                            = "subnet-038a6a6158e4259eb" -> null
+      - tags                                 = {
+          - "Name" = "Udacity T2"
+        } -> null
+      - tags_all                             = {
+          - "Name" = "Udacity T2"
+        } -> null
+      - tenancy                              = "default" -> null
+      - vpc_security_group_ids               = [
+          - "sg-0735643761f2bfff7",
+        ] -> null
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      - credit_specification {
+          - cpu_credits = "standard" -> null
+        }
+
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_put_response_hop_limit = 1 -> null
+          - http_tokens                 = "optional" -> null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -> null
+          - device_name           = "/dev/xvda" -> null
+          - encrypted             = false -> null
+          - iops                  = 100 -> null
+          - tags                  = {} -> null
+          - throughput            = 0 -> null
+          - volume_id             = "vol-02474259048070577" -> null
+          - volume_size           = 8 -> null
+          - volume_type           = "gp2" -> null
+        }
+    }
+
+  # aws_instance.udacity-t2[3] will be destroyed
+  - resource "aws_instance" "udacity-t2" {
+      - ami                                  = "ami-0323c3dd2da7fb37d" -> null
+      - arn                                  = "arn:aws:ec2:us-east-1:162925386544:instance/i-000a58d4ec181e4ef" -> null      - associate_public_ip_address          = false -> null
+      - availability_zone                    = "us-east-1a" -> null
+      - cpu_core_count                       = 1 -> null
+      - cpu_threads_per_core                 = 1 -> null
+      - disable_api_termination              = false -> null
+      - ebs_optimized                        = false -> null
+      - get_password_data                    = false -> null
+      - hibernation                          = false -> null
+      - id                                   = "i-000a58d4ec181e4ef" -> null
+      - instance_initiated_shutdown_behavior = "stop" -> null
+      - instance_state                       = "stopped" -> null
+      - instance_type                        = "t2.micro" -> null
+      - ipv6_address_count                   = 0 -> null
+      - ipv6_addresses                       = [] -> null
+      - monitoring                           = false -> null
+      - primary_network_interface_id         = "eni-06232c9de5f709ffa" -> null
+      - private_dns                          = "ip-10-1-10-81.ec2.internal" -> null
+      - private_ip                           = "10.1.10.81" -> null
+      - secondary_private_ips                = [] -> null
+      - security_groups                      = [] -> null
+      - source_dest_check                    = true -> null
+      - subnet_id                            = "subnet-038a6a6158e4259eb" -> null
+      - tags                                 = {
+          - "Name" = "Udacity T2"
+        } -> null
+      - tags_all                             = {
+          - "Name" = "Udacity T2"
+        } -> null
+      - tenancy                              = "default" -> null
+      - vpc_security_group_ids               = [
+          - "sg-0735643761f2bfff7",
+        ] -> null
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = "open" -> null
+        }
+
+      - credit_specification {
+          - cpu_credits = "standard" -> null
+        }
+
+      - enclave_options {
+          - enabled = false -> null
+        }
+
+      - metadata_options {
+          - http_endpoint               = "enabled" -> null
+          - http_put_response_hop_limit = 1 -> null
+          - http_tokens                 = "optional" -> null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -> null
+          - device_name           = "/dev/xvda" -> null
+          - encrypted             = false -> null
+          - iops                  = 100 -> null
+          - tags                  = {} -> null
+          - throughput            = 0 -> null
+          - volume_id             = "vol-0296d10f3f82d923a" -> null
+          - volume_size           = 8 -> null
+          - volume_type           = "gp2" -> null
+        }
+    }
+
+Plan: 0 to add, 0 to change, 4 to destroy.
+
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: yes
+
+aws_instance.udacity-t2[1]: Destroying... [id=i-0450e3bb4f97d135c]
+aws_instance.udacity-t2[3]: Destroying... [id=i-000a58d4ec181e4ef]
+aws_instance.udacity-t2[0]: Destroying... [id=i-0b258cdf2e33470a6]
+aws_instance.udacity-t2[2]: Destroying... [id=i-04b97bb3a7f1db80c]
+aws_instance.udacity-t2[1]: Still destroying... [id=i-0450e3bb4f97d135c, 10s elapsed]
+aws_instance.udacity-t2[2]: Still destroying... [id=i-04b97bb3a7f1db80c, 10s elapsed]
+aws_instance.udacity-t2[3]: Still destroying... [id=i-000a58d4ec181e4ef, 10s elapsed]
+aws_instance.udacity-t2[0]: Still destroying... [id=i-0b258cdf2e33470a6, 10s elapsed]
+aws_instance.udacity-t2[0]: Destruction complete after 11s
+aws_instance.udacity-t2[2]: Destruction complete after 11s
+aws_instance.udacity-t2[1]: Destruction complete after 11s
+aws_instance.udacity-t2[3]: Destruction complete after 11s
+
+Destroy complete! Resources: 4 destroyed.
