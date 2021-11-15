@@ -1,0 +1,14 @@
+﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon EC2,0,2287.32,27447.84,USD,"Operating system (Linux), Quantity (12), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (a1.metal)"
+My Estimate,US East (N. Virginia),ELB,Application Load Balancer,0,37.52,450.24,USD,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),S3,S3 Standard,0,282.62,3391.44,USD,S3 Standard storage (12 TB per month)
+My Estimate,US East (N. Virginia),S3,Data Transfer,0,0,0.00,USD,
+My Estimate,US East (N. Virginia),,AWS Data Transfer,0,0,0.00,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month), Data transfer cost (0)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,15752,189024.00,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (16 TB), Quantity (1), Instance type (db.m5.24xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+My Estimate,US East (N. Virginia),,Amazon Virtual Private Cloud (VPC),0,401.49,4817.88,USD,Number of NAT Gateways (1)
+
+Rationale:
+Increased my variable costs from 9,201.42 to 18,760.95 USD/month by provisioning additional resources for the following cloud services: 
+- RDS (for MySQL): allocated more memory (384 GB)/storage(16 TB)
+- EC2 Instances: increased #vCPU's (10), memory per instance (12GB), quantity (12)
+- S3 Storage: increased storage size from 2 to 12 TB
